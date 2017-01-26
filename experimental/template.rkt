@@ -443,6 +443,9 @@ instead of integers and integer vectors.
            (template-metafunction? (lookup #'mf #f)))
       (let-values ([(mf) (lookup #'mf #f)]
                    [(drivers guide props-guide) (parse-t #'template depth esc?)])
+        (displayln drivers)
+        (displayln guide)
+        (displayln props-guide)
         (values (dset-add drivers mf)
                 (vector 'metafun mf guide)
                 (cons-guide '_ props-guide)))]
