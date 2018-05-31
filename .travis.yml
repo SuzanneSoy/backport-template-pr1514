@@ -50,7 +50,7 @@ before_script:
 # `raco pkg install --deps search-auto` to install any required
 # packages without it getting stuck on a confirmation prompt.
 script:
- - raco test -x -p backport-template-pr1514
+ - raco test -r -p backport-template-pr1514
  - if test $RACKET_VERSION != 6.0 -a $RACKET_VERSION != 6.1; then raco setup --check-pkg-deps --pkgs backport-template-pr1514; fi
 
 after_success:
