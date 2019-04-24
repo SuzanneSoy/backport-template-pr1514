@@ -20,7 +20,7 @@ env:
     # Supply more than one RACKET_VERSION (as in the example below) to
     # create a Travis-CI build matrix to test against multiple Racket
     # versions.
-    - RACKET_VERSION=6.0
+    #- RACKET_VERSION=6.0 # Version 6.0 fails to download some packages from the catalog because of an SSL version incompatibility. Build for that version disabled for now.
     - RACKET_VERSION=6.1
     - RACKET_VERSION=6.1.1
     - RACKET_VERSION=6.2
