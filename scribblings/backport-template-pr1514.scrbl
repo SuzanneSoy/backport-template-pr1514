@@ -3,7 +3,7 @@
                     racket/base]]
 
 @title{backport-template-pr1514}
-@author{georges}
+@author[@author+email["Suzanne Soy" "racket@suzanne.soy"]]
 
 @defmodule[backport-template-pr1514]
 
